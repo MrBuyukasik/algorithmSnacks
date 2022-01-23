@@ -5,7 +5,7 @@ function main(){
 }
 
 function binarySearch(arr,el){
-    arr.sort((a,b)=> a-b )
+    // arr.sort((a,b)=> a-b )
     let initLow = 0
     let initHigh = arr.length-1
     //let maxIterate = Math.log2(arr.length)
@@ -23,7 +23,7 @@ function binarySearch(arr,el){
     const {result,mid} = search(arr,initLow,initHigh,el)
     if(result){
          console.log({value:arr[mid],index:mid})
-       }
+     }
 }
 
 function search(arr,low,high,el){
